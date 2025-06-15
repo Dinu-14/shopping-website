@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .header_top_icon
-  {
+@layer components {
+  .header_top_icon {
     @apply bg-gray-200 
     rounded-md 
     p-[6px] 
@@ -13,34 +12,25 @@
     hover:bg-accent 
     hover:text-white;
   }
-  
-  
-  .navbar__ link:hover{
-    color: #ff8f9c;
-    transition: all 0.4s;
+.navbar_link {
+    @apply relative text-gray-700 transition duration-300;
   }
-  
-  
-  .navbar__ link::after {
+.navbar_link:hover {
+    @apply text-pink-500;
+  }
+.navbar_link::after {
+    content: "";
     position: absolute;
-    content:"";
-    background-color:#ff8f9c;
-    height: 3px;
+    background-color: #ff8f9c;
+    height: 2px;
     width: 100%;
     bottom: -5px;
     left: 0;
-    scale: 0;
+    transform: scaleX(0);
     transform-origin: left;
-    transition: all 0.4s;
+    transition: transform 0.3s ease-in-out;
   }
-  
-  
-  .navbar__ link:hover:after{
-     scale: 1;
-  
+.navbar_link:hover::after{
+    transform: scaleX(1);
   }
-  
-  
-  
 }
-

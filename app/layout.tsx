@@ -4,7 +4,7 @@ import "./globals.css";
 import HeaderTop from "@/components/HeaderTop";
 import HeaderMain from "@/components/HeaderMain";
 import { TbLayoutNavbar } from "react-icons/tb";
-import Navbar from "@/components/Navbar";
+
 
 
 const geistSans = Geist({
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
          <HeaderTop />
          <HeaderMain />
-         <Navbar />
+        
          
         {children}
       </body>
