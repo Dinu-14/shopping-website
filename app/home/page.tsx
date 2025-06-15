@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../../components/Hero'
+import Link from 'next/link'
 
 const HomePage = () => {
   return (
@@ -38,7 +39,9 @@ const HomePage = () => {
         <div className="container mx-auto">
           <h2 className="text-2xl font-bold mb-6">Shop by Category</h2>
           <div className="flex flex-wrap gap-4 justify-center">
-            <div className="bg-pink-100 px-8 py-4 rounded-lg font-semibold">Women</div>
+            <Link href="/women">
+              <div className="bg-pink-100 px-8 py-4 rounded-lg font-semibold cursor-pointer hover:bg-pink-200 transition">Women</div>
+            </Link>
             <div className="bg-blue-100 px-8 py-4 rounded-lg font-semibold">Men</div>
             <div className="bg-green-100 px-8 py-4 rounded-lg font-semibold">Kids</div>
             <div className="bg-yellow-100 px-8 py-4 rounded-lg font-semibold">Accessories</div>
