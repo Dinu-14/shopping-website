@@ -42,7 +42,9 @@ const HomePage = () => {
             <Link href="/women">
               <div className="bg-pink-100 px-8 py-4 rounded-lg font-semibold cursor-pointer hover:bg-pink-200 transition">Women</div>
             </Link>
-            <div className="bg-blue-100 px-8 py-4 rounded-lg font-semibold">Men</div>
+            <Link href="/men">
+              <div className="bg-blue-100 px-8 py-4 rounded-lg font-semibold cursor-pointer hover:bg-blue-200 transition">Men</div>
+            </Link>
             <div className="bg-green-100 px-8 py-4 rounded-lg font-semibold">Kids</div>
             <div className="bg-yellow-100 px-8 py-4 rounded-lg font-semibold">Accessories</div>
           </div>
